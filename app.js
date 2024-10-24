@@ -16,6 +16,7 @@ let sellPrice = null; // Variable to store the price at which we sold
 app.post('/webhook', (req, res) => {
     const alert = req.body;
     console.log(alert);
+    console.log(alert.signal);
     // Assuming the alert payload contains a 'price' field
     const price = alert.price;
 
